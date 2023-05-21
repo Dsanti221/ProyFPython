@@ -174,7 +174,7 @@ def ListarAlumno(request):
             return render (request,'crudalumnos/listar.html', datos)
 
     else:    
-        alu = alumnoss.objects.order_by('id')[:20]
+        alu = alumnoss.objects.order_by('id')[:60]
         datos = {'alumnoss': alu}
         return render (request,'crudalumnos/listar.html', datos)
 
